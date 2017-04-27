@@ -15,13 +15,19 @@
   "license": "ISC",
   "main": "index.js",
   "scripts": {
-    "test": "eslint -c .eslintrc ./lib && mocha test/reporter.spec.js"
+    "test:coverage:generate": "echo generating coverage",
+    "test:eslint": "eslint -c .eslintrc ./lib",
+    "test:unit": "istanbul cover _mocha -- ./test/reporter.spec.js",
+    "test:coverage:publish": "codecov -t $CODECOV_TOKEN",
+    "test": "npm run test:eslint && npm run test:unit"
   },
   "dependencies": {
     "nanybar": "^1.0.2"
   },
   "devDependencies": {
+    "codecov": "^2.1.0",
     "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
     "mocha": "^3.3.0"
   }
 }
