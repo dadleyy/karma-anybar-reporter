@@ -1,0 +1,27 @@
+{
+  "name": "karma-anybar-reporter",
+  "version": "0.0.1",
+  "description": "a karma reporter that communicates with anybar",
+  "repository": "dadleyy/karma-anybar-reporter",
+  "homepage": "https://github.com/dadleyy/karma-anybar-reporter",
+  "keywords": [
+    "osx",
+    "anybar",
+    "karma",
+    "karma-plugin",
+    "karma-reporter"
+  ],
+  "author": "Danny Hadley <dadleyy@gmail.com>",
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint -c .eslintrc ./lib && mocha test/reporter.spec.js"
+  },
+  "dependencies": {
+    "nanybar": "^1.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "mocha": "^3.3.0"
+  }
+}
