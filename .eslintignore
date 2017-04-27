@@ -1,0 +1,13 @@
+test/*.js
+test/**/*.js
+dist/**/*.js
+tmp/**/*.js
+node_modules/**/*.js
+bin/**/*.js
+bin/*.js
+config/**/*.js
+config/*.js
+auto/**/*.js
+auto/*.js
+karma.conf.js
+gulpfile.js
